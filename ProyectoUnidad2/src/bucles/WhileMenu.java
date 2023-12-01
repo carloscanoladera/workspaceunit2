@@ -21,34 +21,34 @@ public class WhileMenu {
 			System.out.println(" 3. yardas");
 			System.out.println(" 4. millas");
 			System.out.println();
-			System.out.println("Introduce el num閞o seleccionado entre 1 y 5: ");
+			System.out.println("Introduce el numero seleccionado entre 1 y 5: ");
 			opcionNumero = sc.nextInt();
 
-			/* Read user抯 measurement and convert to inches. */
+			/* Read users measurement and convert to inches. */
 			switch (opcionNumero) {
 			case 1:
-				System.out.println("Introduce el n鷐ero de pulgadas ");
+				System.out.println("Introduce el n煤mero de pulgadas ");
 				medida = sc.nextDouble();
 				pulgadas = medida;
-				System.out.println("La conversi髇 a pulgadas es: " + pulgadas);
+				System.out.println("La conversi贸n a pulgadas es: " + pulgadas);
 				break;
 			case 2:
-				System.out.println("Introduce el n鷐ero de pies: ");
+				System.out.println("Introduce el n锟絤ero de pies: ");
 				medida = sc.nextDouble();
 				pulgadas = medida * 12;
-				System.out.println("La conversi髇 a pulgadas es: " + pulgadas);
+				System.out.println("La conversi贸n a pulgadas es: " + pulgadas);
 				break;
 			case 3:
-				System.out.println("Introduce el n鷐ero de yardas: ");
+				System.out.println("Introduce el n煤mero de yardas: ");
 				medida = sc.nextDouble();
 				pulgadas = medida * 36;
-				System.out.println("La conversi髇 a pulgadas es: " + pulgadas);
+				System.out.println("La conversi贸n a pulgadas es: " + pulgadas);
 				break;
 			case 4:
-				System.out.println("Introduce el n鷐ero de millas: ");
+				System.out.println("Introduce el n煤mero de millas: ");
 				medida = sc.nextDouble();
 				pulgadas = medida * 63360;
-				System.out.println("La conversi髇 a pulgadas es: " + pulgadas);
+				System.out.println("La conversi贸n a pulgadas es: " + pulgadas);
 				
 			case 5:
 				System.out.println("Final del programa. Adios! ");
