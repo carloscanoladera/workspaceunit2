@@ -13,7 +13,13 @@ public class FuncionesMatematicas {
 	return calculo;
 	//También se puede poner Return  ((x + y)  / 2)
 	}
-	
+	/*
+	 * 
+	 * The number passed as a parameter is reversed
+	 * For instance if we make the call reverse(3456) the
+	 * value returned by the function would be 6543
+	 * 
+	 */
 	public static int reverse(int num) {
 		
 		int cifra,numRes=0;
