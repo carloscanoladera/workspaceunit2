@@ -9,8 +9,8 @@ public class EjemploFuncion {
 		
 		boolean seisEsPar = esPar(6);
 		
-		System.out.println(" ¿El cinco es par?" + cincoEsPar);
-		System.out.println(" ¿El seis es par?" + seisEsPar);
+		System.out.println(" ï¿½El cinco es par?" + cincoEsPar);
+		System.out.println(" ï¿½El seis es par?" + seisEsPar);
 	
 		
 	}
@@ -35,7 +35,7 @@ public class EjemploFuncion {
 		
 	}
 	
-	// Hacer la función esDivisiblePorTres( int numero)
+	// Hacer la funciÃ³n esDivisiblePorTres( int numero)
 	
 	//Probarla con por ejemplo esDivisiblePorTres(11)
 	public static boolean  esDivisiblePorTres(int numero) {
