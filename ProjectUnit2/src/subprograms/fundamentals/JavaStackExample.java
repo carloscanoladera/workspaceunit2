@@ -1,8 +1,8 @@
-package funciones.fundamentos;
-public class JavaStackEjemplo {
+package subprograms.fundamentals;
+public class JavaStackExample {
 	
 	
-	static int doble(int num) {
+	static int twoFold(int num) {
 		int result= num*2;
 		
 		num=num+2;
@@ -14,7 +14,7 @@ public class JavaStackEjemplo {
 		// TODO Auto-generated method stub
 		
 		int x=5;
-		int res= doble(x);
+		int res= twoFold(x);
 		
 		System.out.println(res);
 		

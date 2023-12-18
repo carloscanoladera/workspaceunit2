@@ -1,4 +1,4 @@
-package funciones.fundamentos;
+package subprograms.fundamentals;
 
 public class JavaVariableScopeExample {
 	
