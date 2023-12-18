@@ -1,5 +1,5 @@
-package recursividad;
-public class MecanismoEjecucionPilaJava {
+package recursion;
+public class StackExecutionMechanism {
 
 	/**
 	 * @param args

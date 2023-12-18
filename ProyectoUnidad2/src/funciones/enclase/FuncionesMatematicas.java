@@ -1,7 +1,7 @@
 package funciones.enclase;
 import java.util.Scanner;
 
-public class ProgramaMedia {
+public class FuncionesMatematicas {
 	
 							//	parámetros formales
 	public static double media( int x , int y ) {
