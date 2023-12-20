@@ -106,8 +106,7 @@ public class PersonPassinParameters {
 
 
 	// m method
-    public static void main(String[] args)
-    {
+    public static void main(String[] args)    {
     	
     	int newAge =45;
     	PersonPassinParameters person1=  new PersonPassinParameters("johny", "shotgun", 40);
@@ -126,8 +125,7 @@ public class PersonPassinParameters {
     	
     	System.out.println("Person1 after passed by reference:" + person1  );
     	
-    	
-    
+    	    
     }
 
 }
