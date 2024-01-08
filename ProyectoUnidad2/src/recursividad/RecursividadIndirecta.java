@@ -11,20 +11,20 @@ public class RecursividadIndirecta {
 	}
 	
 	static void sumaaux(int a, int b, int S1) {
-		
-		
+
+		int ant=S1;
 		if (a<=b) {			
 		
 			S1= S1+ a;
-			imprime(a,b,S1);
+			imprime(a,b,S1,ant);
 			
 		}
 		
 	}
 	
-	static void imprime(int a, int b,int S1) {
+	static void imprime(int a, int b,int S1, int ant) {
 		
-		System.out.println(a + "+" + b + "=" + S1);
+		System.out.println(a + "+" + ant + "=" + S1);
 		
 		a++;
 		sumaaux(a,b,S1);

@@ -89,6 +89,10 @@ public class Ejercicio7y22Funciones {
 
 	
 	
+	static double cosX(long x, long precision) {
+		
+	
+	}
 	
 	
 	public static void main(String[] args) {

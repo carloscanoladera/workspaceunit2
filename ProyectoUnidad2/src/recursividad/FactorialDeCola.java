@@ -6,9 +6,9 @@ public class FactorialDeCola {
 	
 	static long factorial(long n)
 	{
-	    // Puede causar overflow
+	 
 	    //
-	    if (n == 1)
+	    if (n == 0)
 	    	return 1;
 
 	    else
