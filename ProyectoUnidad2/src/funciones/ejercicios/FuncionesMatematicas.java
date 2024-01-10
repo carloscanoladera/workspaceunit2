@@ -181,16 +181,16 @@ public class FuncionesMatematicas {
 		int result=0;
 		int position=0;
 		
-		//n= n%numDigits;
+		n= n%numDigits;
 		
-		while (number>0) {
+		while (number>0 && n!=0) {
 			
 			digit=number%10;
 			number=number/10;
 			if(position<n) {
 				
-				result+= digit*Math.pow(10, position + n);
-				//result+= digit*Math.pow(10,numDigits - n + position);
+				//result+= digit*Math.pow(10, position + n);
+				result+= digit*Math.pow(10,numDigits - n + position);
 			} else {
 				
 				result+= digit*Math.pow(10, position-n);
@@ -200,18 +200,40 @@ public class FuncionesMatematicas {
 			
 			
 		}
+		// if the rotation is zero we do not rotate we return the number as if
+	if (n==0)
+		result=number;
 		
 	return result;
 	}
 	
 	// int rotateNToTheLeft(int number,int n)
 			// input= 53765 , 3
-			// output= 65735
+			// output= 65537
 	
 	static int rotateNToTheLeft(int number, int n) {
 		
+		int numDigits= countDigits(number);
+		int digit=0;
+		int result=0;
+		int position=0;
 		
-		return 0;
+		n= n%numDigits;
+		
+		while (number>0 && n!=0) {
+			
+			
+			result+= digit*Math.pow(10,(position+n)%numDigits);
+			
+		}
+		// if the rotation is zero we do not rotate we return the number as if
+		if (n==0) {
+			
+			result=number;
+		}
+		
+		
+		return result;
 	
 	}
 	
@@ -229,7 +251,23 @@ public class FuncionesMatematicas {
 	
 	static boolean isPrimeNumber(int num) {
 		
-		return true;
+		int count=2;
+		boolean isPrime= true;
+		
+		while ( (count <=num/2) && (isPrime)) {
+			
+			
+			if (num%count==0) {
+				
+				isPrime=false;
+				
+			}
+			
+			count++;
+			
+		}
+		
+		return isPrime;
 	}
 	
 	
@@ -240,14 +278,45 @@ public class FuncionesMatematicas {
 	
 	// use modularity
 	// write a procedure named by nPrimeList that prints out the first n prime numbers. 
-	// the  list of the first five (n==5) prime numbers is as following:  2, 3, 5, 7, 11
+	// the  list of the first five (n==5) prime numbers is as following:  1, 2, 3, 5, 7, 11
+	
+	//n=6
 	// countPrimes -> 
 	// countNum -> to traverse all the numbers until you get n prime numbers 1,2,3,4,5,6,7,8,9,10,11
 	// while (countPrimes <=n) {
 		
-	// if IsPrime(number) 
+	// if isPrimeNumber(number) 
 	//		countPrimes++
 	// countNum++;
+	
+	
+	static void listNPrimeNumbers(int n) {
+		
+		
+		int countPrimes= 0;
+		int countNum=1;
+		
+		// we need a counter that control the number of primes printed
+		// as we reach n the program must end
+		//Improve this program so it does not print the comma in the last
+		//number of the list
+		while (countPrimes<n) {
+			
+			
+			if (isPrimeNumber(countNum)) {
+				System.out.print(countNum+ ", ");
+				countPrimes++;
+			}
+			
+			countNum++;
+			
+		}
+		
+		
+			
+	}
+	
+	
 	
 	
 	
@@ -303,6 +372,8 @@ public class FuncionesMatematicas {
 	     
 	     */
 	     System.out.println("the number rotates 2: " + rotateNToTheRight(85374,2));
+	     
+	     listNPrimeNumbers(6);
 
 	}
 
