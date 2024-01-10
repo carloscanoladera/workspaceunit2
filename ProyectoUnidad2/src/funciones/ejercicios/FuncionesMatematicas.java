@@ -176,11 +176,12 @@ public class FuncionesMatematicas {
 	
 	static int rotateNToTheRight(int number, int n) {
 		
-		//int numDigits= countDigits(number);
+		int numDigits= countDigits(number);
 		int digit=0;
 		int result=0;
 		int position=0;
 		
+		//n= n%numDigits;
 		
 		while (number>0) {
 			
@@ -188,8 +189,8 @@ public class FuncionesMatematicas {
 			number=number/10;
 			if(position<n) {
 				
-				
-				result+= digit*Math.pow(10, position+n);
+				result+= digit*Math.pow(10, position + n);
+				//result+= digit*Math.pow(10,numDigits - n + position);
 			} else {
 				
 				result+= digit*Math.pow(10, position-n);
@@ -280,7 +281,7 @@ public class FuncionesMatematicas {
 		
 		int num1,num2;
 		double result;
-		Scanner sc = new Scanner(System.in);
+	/*	Scanner sc = new Scanner(System.in);
 		System.out.println("Dame el primer Numero");
 		num1= sc.nextInt();
 		
@@ -300,8 +301,8 @@ public class FuncionesMatematicas {
 	     System.out.println("the number after taking out the " + num2 + " position for "+  num1+ " is " + outcome);
 
 	     
-	     
-	     System.out.println("the number rotates 2: " + rotateNToTheRight(5376,2));
+	     */
+	     System.out.println("the number rotates 2: " + rotateNToTheRight(85374,2));
 
 	}
 
