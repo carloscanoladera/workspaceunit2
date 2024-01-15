@@ -1,13 +1,17 @@
 package recursividad;
 public class ImprimirRecursivo { 
+	
+	
+	
+	
     static void printFun(int test) 
     { 
         if (test < 1) 
             return; 
   
         else { 
-            System.out.printf("%d ", test); 
-  
+           
+        	System.out.printf("%d ", test);   
             
             printFun(test - 1); 
   
@@ -19,6 +23,6 @@ public class ImprimirRecursivo {
     public static void main(String[] args) 
     { 
         int test = 3; 
-        printFun(test); 
+      
     } 
 }

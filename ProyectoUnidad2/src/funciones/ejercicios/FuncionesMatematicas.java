@@ -336,6 +336,16 @@ public class FuncionesMatematicas {
 	    return a;
 	}
 	
+	
+	// hacer el minimo común multiplo no recursivo
+	
+	public static int minimoComunMultiplo(int a, int b) {
+		
+		return a*b/maximoComunDivisor(a, b);
+	}
+	
+	
+	
 	// procedimiento para mostrar la simplificacion de una fraccion
 	// pasamos la fraccion 18/20 resultado mostrado sea 18/20=9/10
 	//Modularidad -> usamos el MCD para simplificar la fracción
